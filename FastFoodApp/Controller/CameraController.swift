@@ -13,6 +13,8 @@ class CameraController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var predictionLabel: UILabel!
     
+    let alertHelper = AlertHelper.show
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
