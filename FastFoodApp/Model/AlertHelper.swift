@@ -34,7 +34,7 @@ class AlertHelper {
         let gallery = UIAlertAction(title: "Gallerie de photos",
             style: .default) { (action) in
             picker.sourceType = .photoLibrary
-            controller.present(controller, animated: true, completion: nil)
+            controller.present(picker, animated: true, completion: nil)
         }
         
         let cancel = UIAlertAction(title: "Annuler", style: .cancel, handler: nil)
@@ -44,13 +44,13 @@ class AlertHelper {
         alert.addAction(cancel)
         
         // Code nécessaire pour l'iPad
-        if let pop = alert.popoverPresentationController {
-            pop.sourceView = controller.view
-            pop.sourceRect = CGRect(x: controller.view.frame.midX,
-                                    y: controller.view.frame.midY,
-                                    width: 0, height: 0)
-            pop.permittedArrowDirections = []
-        }
+//        if let pop = alert.popoverPresentationController {
+//            pop.sourceView = controller.view
+//            pop.sourceRect = CGRect(x: controller.view.frame.midX,
+//                                    y: controller.view.frame.midY,
+//                                    width: 0, height: 0)
+//            pop.permittedArrowDirections = []
+//        }
         // Fin code pour l'iPad
         
         controller.present(alert, animated: true, completion: nil)
