@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2C1E996A2184391A00F416DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E99692184391A00F416DE /* AppDelegate.swift */; };
-		2C1E996C2184391A00F416DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E996B2184391A00F416DE /* ViewController.swift */; };
+		2C1E996C2184391A00F416DE /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E996B2184391A00F416DE /* CameraController.swift */; };
 		2C1E996F2184391A00F416DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E996D2184391A00F416DE /* Main.storyboard */; };
 		2C1E99712184391B00F416DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E99702184391B00F416DE /* Assets.xcassets */; };
 		2C1E99742184391C00F416DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E99722184391B00F416DE /* LaunchScreen.storyboard */; };
+		2C1E997D218439B300F416DE /* Sweet Hipster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E997C218439B300F416DE /* Sweet Hipster.ttf */; };
+		2C1E997F21843B3D00F416DE /* FastFood.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E997E21843B3C00F416DE /* FastFood.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C1E99662184391A00F416DE /* FastFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1E99692184391A00F416DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C1E996B2184391A00F416DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C1E996B2184391A00F416DE /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		2C1E996E2184391A00F416DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C1E99702184391B00F416DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C1E99732184391B00F416DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C1E99752184391C00F416DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1E997C218439B300F416DE /* Sweet Hipster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sweet Hipster.ttf"; sourceTree = "<group>"; };
+		2C1E997E21843B3C00F416DE /* FastFood.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FastFood.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		2C1E99682184391A00F416DE /* FastFoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				2C1E997B2184394300F416DE /* Resources */,
 				2C1E99692184391A00F416DE /* AppDelegate.swift */,
-				2C1E996B2184391A00F416DE /* ViewController.swift */,
+				2C1E996B2184391A00F416DE /* CameraController.swift */,
 				2C1E996D2184391A00F416DE /* Main.storyboard */,
 				2C1E99702184391B00F416DE /* Assets.xcassets */,
 				2C1E99722184391B00F416DE /* LaunchScreen.storyboard */,
 				2C1E99752184391C00F416DE /* Info.plist */,
 			);
 			path = FastFoodApp;
+			sourceTree = "<group>";
+		};
+		2C1E997B2184394300F416DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C1E997E21843B3C00F416DE /* FastFood.mlmodel */,
+				2C1E997C218439B300F416DE /* Sweet Hipster.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1E997D218439B300F416DE /* Sweet Hipster.ttf in Resources */,
 				2C1E99742184391C00F416DE /* LaunchScreen.storyboard in Resources */,
 				2C1E99712184391B00F416DE /* Assets.xcassets in Resources */,
 				2C1E996F2184391A00F416DE /* Main.storyboard in Resources */,
@@ -135,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C1E996C2184391A00F416DE /* ViewController.swift in Sources */,
+				2C1E996C2184391A00F416DE /* CameraController.swift in Sources */,
+				2C1E997F21843B3D00F416DE /* FastFood.mlmodel in Sources */,
 				2C1E996A2184391A00F416DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
