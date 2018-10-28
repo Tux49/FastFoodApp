@@ -37,7 +37,17 @@ extension CameraController: UIImagePickerControllerDelegate, UINavigationControl
             }
         }
         
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true) {
+            CoreMLHelper.analyse.junkFood(self.imageView.image,
+                completion: { (resultString) in
+                    DispatchQueue.main.async {
+                        if resultString != nil {
+                            self.predictionLabel.text = resultString!
+
+                        }
+                    }
+            })
+        }
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
